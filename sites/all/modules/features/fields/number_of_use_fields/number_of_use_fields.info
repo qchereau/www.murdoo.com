@@ -1,0 +1,11 @@
+name = Number of Use fields
+description = Number of use system fields : Fields used to manage number of uses
+core = 7.x
+package = Fields
+version = 7.x-1.0-alpha1
+dependencies[] = features
+dependencies[] = number
+features[features_api][] = api:2
+features[field_base][] = field_initial_number_of_use
+features[field_base][] = field_remaining_number_of_use
+project path = sites/all/modules/features/fields
