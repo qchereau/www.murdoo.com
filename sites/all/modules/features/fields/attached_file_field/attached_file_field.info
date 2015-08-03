@@ -1,0 +1,10 @@
+name = Attached File field
+description = The field of attached files
+core = 7.x
+package = Fields
+version = 7.x-1.0-alpha1
+dependencies[] = features
+dependencies[] = file
+features[features_api][] = api:2
+features[field_base][] = field_attached_file
+project path = sites/all/modules/features/fields
