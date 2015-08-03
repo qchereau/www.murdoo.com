@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Character node-type feature.
+ */
+
+include_once 'character_node_type.features.inc';
