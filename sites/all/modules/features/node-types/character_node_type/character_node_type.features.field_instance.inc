@@ -177,45 +177,6 @@ function character_node_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-character-field_inventory'
-  $field_instances['node-character-field_inventory'] = array(
-    'bundle' => 'character',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 4,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_inventory',
-    'label' => 'Inventory',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 35,
-    ),
-  );
-
   // Exported field_instance: 'node-character-field_last_name'
   $field_instances['node-character-field_last_name'] = array(
     'bundle' => 'character',
@@ -256,95 +217,13 @@ function character_node_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-character-field_played_by'
-  $field_instances['node-character-field_played_by'] = array(
-    'bundle' => 'character',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_played_by',
-    'label' => 'Played By',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 37,
-    ),
-  );
-
-  // Exported field_instance: 'node-character-field_room'
-  $field_instances['node-character-field_room'] = array(
-    'bundle' => 'character',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'The room the player is in',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 7,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_room',
-    'label' => 'Room',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 38,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Alive');
   t('Attached File');
   t('Body');
   t('First Name');
-  t('Inventory');
   t('Last Name');
-  t('Played By');
-  t('Room');
-  t('The room the player is in');
   t('Tip : If you want your character to have several first names, just click the Add More button to make a new field appear.');
 
   return $field_instances;

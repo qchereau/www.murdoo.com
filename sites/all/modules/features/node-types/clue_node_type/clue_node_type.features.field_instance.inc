@@ -55,50 +55,9 @@ function clue_node_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-clue-field_place'
-  $field_instances['node-clue-field_place'] = array(
-    'bundle' => 'clue',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'The room the clue is located',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 1,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_place',
-    'label' => 'Place',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 32,
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
-  t('Place');
-  t('The room the clue is located');
 
   return $field_instances;
 }
