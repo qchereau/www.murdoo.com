@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the participate in feature.
+ */
+
+include_once 'participate_in.features.inc';
