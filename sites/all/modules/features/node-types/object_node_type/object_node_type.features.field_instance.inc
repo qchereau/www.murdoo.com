@@ -101,45 +101,6 @@ function object_node_type_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-object-field_place'
-  $field_instances['node-object-field_place'] = array(
-    'bundle' => 'object',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'The room the object is located.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 3,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_place',
-    'label' => 'Place',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 35,
-    ),
-  );
-
   // Exported field_instance: 'node-object-field_remaining_number_of_use'
   $field_instances['node-object-field_remaining_number_of_use'] = array(
     'bundle' => 'object',
@@ -190,9 +151,7 @@ function object_node_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Initial Number Of Use');
-  t('Place');
   t('Remaining Number Of Use');
-  t('The room the object is located.');
 
   return $field_instances;
 }

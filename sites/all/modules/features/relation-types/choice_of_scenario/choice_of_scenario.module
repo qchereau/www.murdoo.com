@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the choice of scenario feature.
+ */
+
+include_once 'choice_of_scenario.features.inc';

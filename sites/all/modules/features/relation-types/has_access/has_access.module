@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the has access feature.
+ */
+
+include_once 'has_access.features.inc';
