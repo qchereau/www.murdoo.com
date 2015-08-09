@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Manual node-type feature.
+ */
+
+include_once 'manual_node_type.features.inc';

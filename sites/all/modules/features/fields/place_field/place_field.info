@@ -1,0 +1,10 @@
+name = Place field
+description = A field used by both clues and objects for saving its place
+core = 7.x
+package = Fields
+version = 7.x-1.0-alpha1
+dependencies[] = entityreference
+dependencies[] = features
+features[features_api][] = api:2
+features[field_base][] = field_place
+project path = sites/all/modules/features/fields

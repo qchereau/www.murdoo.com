@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Murder Party node-type feature.
+ */
+
+include_once 'murder_party_node_type.features.inc';

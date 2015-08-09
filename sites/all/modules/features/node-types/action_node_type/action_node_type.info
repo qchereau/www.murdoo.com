@@ -1,0 +1,17 @@
+name = Action node-type
+description = The feature describing the Action node type
+core = 7.x
+package = Node Types
+version = 7.x-1.0-alpha1
+dependencies[] = body_field
+dependencies[] = features
+dependencies[] = node
+dependencies[] = number
+dependencies[] = number_of_use_fields
+dependencies[] = text
+features[features_api][] = api:2
+features[field_instance][] = node-action-body
+features[field_instance][] = node-action-field_initial_number_of_use
+features[field_instance][] = node-action-field_remaining_number_of_use
+features[node][] = action
+project path = sites/all/modules/features/node-types

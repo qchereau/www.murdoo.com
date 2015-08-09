@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Clue node-type feature.
+ */
+
+include_once 'clue_node_type.features.inc';

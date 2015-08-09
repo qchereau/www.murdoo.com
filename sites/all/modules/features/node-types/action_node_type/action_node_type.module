@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Action node-type feature.
+ */
+
+include_once 'action_node_type.features.inc';
