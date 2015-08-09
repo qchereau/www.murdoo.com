@@ -1,0 +1,12 @@
+name = my_clues_view
+description = This View allows a player to see the clues gathered by his character ingame
+core = 7.x
+package = Views
+version = 7.x-1.0-alpha1
+dependencies[] = views
+dependencies[] = views_content
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = my_clues
+features_exclude[dependencies][ctools] = ctools
+project path = sites/all/modules/features/views
