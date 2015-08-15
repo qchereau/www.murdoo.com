@@ -1848,6 +1848,7 @@ tr.error {}
   position: fixed;
   right: 0px;
   z-index:10;
+  top:150px;
 }
 
 #primary-menu-bar a{
@@ -1865,6 +1866,22 @@ div.contextual-links-wrapper {
 }
 
 @media only screen and (min-width:1025px) {
-	.region-sidebar-first {width: 260px !important;}
-	.content-inner {margin-left: 260px !important;}
+  .region-sidebar-first {width: 260px !important;}
+  .content-inner {margin-left: 260px !important;}
+}
+
+#secondary-menu-bar a{
+  color:white !important;
+}
+
+@media (max-height:440px){
+  #branding{
+    display:none;
+  }
+  #secondary-menu-bar,#primary-menu-bar{
+    top:0px;	  
+  }  
+  #columns {  
+    top:50px;
+  }
 }
