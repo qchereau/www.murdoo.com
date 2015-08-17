@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the my_clues_view feature.
- */
-
-include_once 'my_clues_view.features.inc';

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Character stuffs feature.
+ */
+
+include_once 'character_stuffs.features.inc';
