@@ -33,6 +33,14 @@ function character_stuffs_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['label'] = 'No result found';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'You have nothing in this section !';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
   /* Relationship: Entity Reference: Referenced Entity */
   $handler->display->display_options['relationships']['field_owned_by_target_id']['id'] = 'field_owned_by_target_id';
   $handler->display->display_options['relationships']['field_owned_by_target_id']['table'] = 'field_data_field_owned_by';
@@ -69,6 +77,7 @@ function character_stuffs_views_default_views() {
     'character' => 'character',
   );
   $handler->display->display_options['arguments']['nid']['validate_options']['access'] = TRUE;
+  $handler->display->display_options['arguments']['nid']['validate']['fail'] = 'empty';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -178,6 +187,8 @@ function character_stuffs_views_default_views() {
     t('‹ previous'),
     t('next ›'),
     t('last »'),
+    t('No result found'),
+    t('You have nothing in this section !'),
     t('Contenu entity referenced from field_owned_by'),
     t('Tout'),
     t('Block My Clues'),

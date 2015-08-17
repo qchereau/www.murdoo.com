@@ -128,11 +128,11 @@ function clue_node_type_field_default_field_instances() {
         ),
         'all_published' => 0,
         'author' => array(
-          'delete' => 0,
+          'delete' => 'delete',
           'update' => 'update',
           'view' => 'view',
         ),
-        'author_published' => 0,
+        'author_published' => 1,
         'priority' => 0,
         'referenced' => array(
           'delete' => array(
