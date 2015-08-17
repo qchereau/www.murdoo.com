@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Is Part Of feature.
- */
-
-include_once 'is_part_of.features.inc';
