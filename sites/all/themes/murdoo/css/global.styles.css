@@ -256,7 +256,7 @@ var {
 	background-image: -webkit-linear-gradient(top, #000000 0%, #D91C1C 100%);
 	background-image: -ms-linear-gradient(top, #000000 0%, #D91C1C 100%);
 	background-image: linear-gradient(to top, #000000 0%, #D91C1C 100%);	
-	position: fixed;
+	position: absolute;
     width: 100%;
 	z-index:10;
 }
@@ -1833,7 +1833,7 @@ tr.error {}
   box-shadow: 0px -3px 15px 0px #FFFFFF;
   filter:progid:DXImageTransform.Microsoft.Shadow(color=#FFFFFF, Direction=90, Strength=20);
   background-color: black;
-  position: fixed;
+  position: absolute;
   top: 150px;
   width: 100%; 
   z-index  :10;
@@ -1845,10 +1845,9 @@ tr.error {}
 }
 
 #secondary-menu-bar{
-  position: fixed;
+  position: absolute;
   right: 0px;
   z-index:10;
-  top:150px;
 }
 
 #primary-menu-bar a{
@@ -1891,12 +1890,11 @@ div.contextual-links-wrapper {
 }
 
 #menu-bar{
-    position: fixed;
-    top: 150px;
     z-index: 10;
     width: 100%;
     background-color: black;
     height:27px;
+    top: 0px;
 }
 
 #menu-bar .contextual-links-processed{
@@ -1934,4 +1932,15 @@ span.toggler{
   #menu-bar a{
       width: 100%;
   }
+}
+
+#menu-full{
+    top: 160px;
+    position: absolute;
+    width: 100%;
+}
+
+.stickynav-active {
+    position: fixed !important;
+    top: 0px !important;
 }
