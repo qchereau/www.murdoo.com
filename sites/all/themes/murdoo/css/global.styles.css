@@ -1883,6 +1883,9 @@ div.contextual-links-wrapper {
   #columns {  
     top:50px;
   }
+  #menu-full {  
+    top:0px !important;
+  }
 }
 
 @media only screen and (min-width:1025px) {
@@ -1935,7 +1938,7 @@ span.toggler{
 }
 
 #menu-full{
-    top: 160px;
+    top: 150px;
     position: absolute;
     width: 100%;
 }
