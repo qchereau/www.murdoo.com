@@ -1,0 +1,13 @@
+name = murdooCore
+description = module par défaut de murdoo
+core = 7.x
+package = Features
+version = 7.x-0.1-dev
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = responsive_menus
+dependencies[] = stickynav
+features[features_api][] = api:2
+features[menu_custom][] = management
+features[menu_links][] = management_responsive-menus:admin/config/user-interface/responsive_menus
+features[menu_links][] = management_sticky-nav-settings:admin/config/user-interface/stickynav

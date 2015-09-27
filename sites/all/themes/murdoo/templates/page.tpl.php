@@ -133,10 +133,12 @@
     </header>
 
     <!-- !Navigation -->
-    <?php print render($page['menu_bar']); ?>
-    <?php if ($primary_navigation): print $primary_navigation; endif; ?>
-    <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
-
+    <div id="menu-full">
+		<?php print render($page['menu_bar']); ?>
+        <?php if ($primary_navigation): print $primary_navigation; endif; ?>
+        <?php if ($secondary_navigation): print $secondary_navigation; endif; ?>
+    </div>
+        
     <!-- !Breadcrumbs -->
     <?php if ($breadcrumb): print $breadcrumb; endif; ?>
 
