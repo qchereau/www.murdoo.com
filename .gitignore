@@ -7,3 +7,4 @@ sites/*/private
 /nbproject/private/
 nbproject/project.properties
 nbproject/project.xml
+/sites/all/modules/contrib/examples/

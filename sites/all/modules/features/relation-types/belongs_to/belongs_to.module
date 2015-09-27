@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Belongs to feature.
- */
-
-include_once 'belongs_to.features.inc';
