@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Room node-type feature.
+ */
+
+include_once 'room_node_type.features.inc';

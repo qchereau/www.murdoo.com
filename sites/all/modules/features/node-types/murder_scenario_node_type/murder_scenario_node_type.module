@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Murder Scenario node-type feature.
+ */
+
+include_once 'murder_scenario_node_type.features.inc';
