@@ -54,6 +54,45 @@ function murder_party_node_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-murder_party-field_chosen_scenario'
+  $field_instances['node-murder_party-field_chosen_scenario'] = array(
+    'bundle' => 'murder_party',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Choose the scenario you want for your murder party.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_chosen_scenario',
+    'label' => 'Chosen Scenario',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 34,
+    ),
+  );
+
   // Exported field_instance: 'node-murder_party-field_location'
   $field_instances['node-murder_party-field_location'] = array(
     'bundle' => 'murder_party',
@@ -147,6 +186,8 @@ function murder_party_node_type_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Choose the scenario you want for your murder party.');
+  t('Chosen Scenario');
   t('Location');
   t('Scheduled');
 

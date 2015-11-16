@@ -101,6 +101,116 @@ function action_node_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-action-field_is_part_of'
+  $field_instances['node-action-field_is_part_of'] = array(
+    'bundle' => 'action',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Link this action to its scenario',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_is_part_of',
+    'label' => 'Is Part Of',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 37,
+    ),
+  );
+
+  // Exported field_instance: 'node-action-field_owned_by'
+  $field_instances['node-action-field_owned_by'] = array(
+    'bundle' => 'action',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Link this action to its owner',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_owned_by',
+    'label' => 'Owned By',
+    'required' => 0,
+    'settings' => array(
+      'nodeaccess_nodereference' => array(
+        'all' => array(
+          'view' => 0,
+        ),
+        'all_published' => 0,
+        'author' => array(
+          'delete' => 0,
+          'update' => 'update',
+          'view' => 'view',
+        ),
+        'author_published' => 0,
+        'priority' => 0,
+        'referenced' => array(
+          'delete' => array(
+            'delete' => 0,
+            'update' => 0,
+            'view' => 0,
+          ),
+          'published' => 0,
+          'update' => array(
+            'delete' => 0,
+            'update' => 0,
+            'view' => 0,
+          ),
+          'view' => array(
+            'delete' => 0,
+            'update' => 0,
+            'view' => 'view',
+          ),
+        ),
+        'unused' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 38,
+    ),
+  );
+
   // Exported field_instance: 'node-action-field_remaining_number_of_use'
   $field_instances['node-action-field_remaining_number_of_use'] = array(
     'bundle' => 'action',
@@ -151,6 +261,10 @@ function action_node_type_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Body');
   t('Initial Number Of Use');
+  t('Is Part Of');
+  t('Link this action to its owner');
+  t('Link this action to its scenario');
+  t('Owned By');
   t('Remaining Number Of Use');
 
   return $field_instances;
