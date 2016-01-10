@@ -1,0 +1,10 @@
+name = Is Part Of field feature
+description = The feature of the Entity Reference field of composition of a scenario
+core = 7.x
+package = Fields
+version = 7.x-1.0-alpha1
+dependencies[] = entityreference
+dependencies[] = features
+features[features_api][] = api:2
+features[field_base][] = field_is_part_of
+project path = sites/all/modules/features/fields

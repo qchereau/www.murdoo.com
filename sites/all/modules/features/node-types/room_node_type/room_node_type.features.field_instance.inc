@@ -146,6 +146,45 @@ function room_node_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-room-field_is_part_of'
+  $field_instances['node-room-field_is_part_of'] = array(
+    'bundle' => 'room',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Link the Room to its scenario',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_is_part_of',
+    'label' => 'Is Part Of',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 31,
+    ),
+  );
+
   // Exported field_instance: 'node-room-field_max_number_of_characters'
   $field_instances['node-room-field_max_number_of_characters'] = array(
     'bundle' => 'room',
@@ -338,6 +377,8 @@ function room_node_type_field_default_field_instances() {
   t('Define if the room has a limitation of the number of players who can go in at the same time. This gives a hint about the size of the room.');
   t('Define the maximum number of clues that can be in this room. Let the field empty for no limitation.');
   t('Define the maximum number of objects that can be in this room. Let the field empty for no limitation.');
+  t('Is Part Of');
+  t('Link the Room to its scenario');
   t('Max Number Of Characters');
   t('Max Number Of Clues');
   t('Max Number Of Objects');

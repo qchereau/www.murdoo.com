@@ -177,6 +177,45 @@ function character_node_type_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-character-field_is_part_of'
+  $field_instances['node-character-field_is_part_of'] = array(
+    'bundle' => 'character',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Link the character to its scenario',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 6,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_is_part_of',
+    'label' => 'Is Part Of',
+    'required' => 1,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 38,
+    ),
+  );
+
   // Exported field_instance: 'node-character-field_last_name'
   $field_instances['node-character-field_last_name'] = array(
     'bundle' => 'character',
@@ -223,7 +262,9 @@ function character_node_type_field_default_field_instances() {
   t('Attached File');
   t('Body');
   t('First Name');
+  t('Is Part Of');
   t('Last Name');
+  t('Link the character to its scenario');
   t('Tip : If you want your character to have several first names, just click the Add More button to make a new field appear.');
 
   return $field_instances;
